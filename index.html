@@ -1125,16 +1125,22 @@
         </div>
 
         <p class="project-desc">
-          A live data pipeline ingesting and transforming transaction records from the national Property Price Register into 8 KPI cards, interactive charts, and an AutoML forecasting model — updated in real time. On top of that sits an AI agent layer: ask questions in plain English and get back generated Plotly charts or written market analysis, powered by Claude Opus 4.6. Fully accessible via the link above — no API key required.
+          A live data pipeline that scrapes, cleans, and transforms every residential property transaction from Ireland's national Property Price Register into an interactive analytics platform — 8 KPI cards, multi-dimensional charts, and an AutoML forecasting engine, all updating in real time. On top of the data layer sits an agentic AI interface: users ask questions in plain English and receive generated Plotly visualisations or written market analysis, powered by Claude Opus 4.6 with LangChain tool use. Fully accessible via the link above — no API key required.
         </p>
 
-        <div class="feature-list">
-          <div class="feature-item">8 live KPI cards updated from propertypriceregister.ie</div>
-          <div class="feature-item">7 interactive tabs with 3D charts and animated choropleth maps</div>
-          <div class="feature-item">AutoML forecasting with full model leaderboard</div>
-          <div class="feature-item">AI agent mode: ask questions in plain English</div>
-          <div class="feature-item">Agent returns generated Plotly charts or written analysis</div>
-          <div class="feature-item">Powered by Claude Opus 4.6 via LangChain tool use</div>
+        <div class="feature-list full-width">
+          <div class="feature-item"><strong>Live Data Pipeline &amp; Engineering</strong></div>
+          <div class="feature-item">Automated scraping and ingestion from propertypriceregister.ie with cleaning, deduplication, and transformation</div>
+          <div class="feature-item">8 live KPI cards computed from raw transaction data — median prices, volume trends, year-on-year changes</div>
+          <div class="feature-item">7 interactive tabs including 3D scatter plots, animated choropleth maps, and time series breakdowns</div>
+          <div class="feature-item"><strong>AutoML Forecasting Engine</strong></div>
+          <div class="feature-item">Automated model selection across multiple algorithms with walk-forward validation</div>
+          <div class="feature-item">Full model leaderboard ranking candidates by forecast accuracy on held-out data</div>
+          <div class="feature-item">Forecasts generated at county and national level with configurable horizons</div>
+          <div class="feature-item"><strong>Agentic Natural Language Interface</strong></div>
+          <div class="feature-item">LangChain agent with Claude Opus 4.6 interprets plain English queries about the Irish property market</div>
+          <div class="feature-item">Tool-use architecture: agent selects and calls data retrieval, filtering, and visualisation tools autonomously</div>
+          <div class="feature-item">Returns generated Plotly charts or written analytical summaries based on query intent</div>
         </div>
 
         <div class="arch-diagram">
@@ -1149,6 +1155,15 @@
             <span class="arch-node">LangChain Agent</span>
             <span class="arch-arrow">→</span>
             <span class="arch-node">Plotly / NL Output</span>
+          </div>
+        </div>
+
+        <div class="tech-highlights">
+          <p class="arch-label">Technical Highlights</p>
+          <div class="feature-list full-width">
+            <div class="feature-item"><strong>Data engineering:</strong> End-to-end pipeline from web scraping through cleaning, geocoding, and feature extraction — no manual data preparation required</div>
+            <div class="feature-item"><strong>Agentic tool use:</strong> LangChain agent dynamically selects from multiple tools (data query, chart generation, statistical summary) based on user intent — not a fixed prompt chain</div>
+            <div class="feature-item"><strong>AutoML pipeline:</strong> Automated model comparison and selection with transparent leaderboard, removing manual model-picking bias</div>
           </div>
         </div>
 
